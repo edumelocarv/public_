@@ -15,7 +15,8 @@ class ListaEncadeada:
     
     if self.inicio is None:
       self.final = novo
-      self.inicio = novo 
+      self.inicio = novo
+      return
     
     novo.nextData = self.inicio
     
@@ -66,12 +67,10 @@ class ListaEncadeada:
         atual = atual.nextData
     return False          
 
-  def __str__(self):
+  def __repr__(self):
     string = ''
     atual = self.inicio
     while atual is not None:
       string += f"{atual.data} "
       atual = atual.nextData
-    return string       
-
-  
+    return string

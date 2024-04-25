@@ -6,7 +6,12 @@ if __name__ == "__main__":
 
   for i in range(4):
     myList.add(i)
-  
+  myList.addFinal("micaias")
+  myList.addFinal("eduardo")
+  myList.add("Edson")
+  myList.remove(0)
+  myList.remove("Edson")
+  myList.remove("eduardo")
   """ print(myList.__str__())
   print("Vazio: ", myList.isEmpty())
   print("tamanho: ", myList.size())
@@ -18,5 +23,4 @@ if __name__ == "__main__":
   
   #myList.addFinal(5)
   
-  print(myList.__str__())
-  
+  print(myList)
